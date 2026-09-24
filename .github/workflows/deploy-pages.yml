@@ -26,6 +26,7 @@ jobs:
         run: |
           mkdir -p _site
           cp "system pt.html" _site/index.html
+          test -s _site/index.html
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
